@@ -1,7 +1,7 @@
-namespace Aoc.Commands;
+namespace Aoc.Common;
 
 public interface ICommand
 {
-    int? Day { get; }
+    int Day { get; }
     void Execute();
 }

@@ -1,12 +1,12 @@
-﻿using Aoc.Commands;
-using Spectre.Console;
+﻿using Spectre.Console;
 using System.Reflection;
+using Aoc.Common;
 
 var commands = Assembly.GetExecutingAssembly()
     .GetTypes()
-    .Where(t => typeof(ICommand).IsAssignableFrom(t) && t.IsClass && !t.IsAbstract)
+    .Where(t => typeof(ICommand).IsAssignableFrom(t) && t is { IsClass: true, IsAbstract: false })
     .Select(Activator.CreateInstance)
-    .Cast<ICommand>()
+    .OfType<ICommand>()
     .OrderByDescending(x => x.Day)
     .ToList();
 
@@ -17,21 +17,12 @@ while (running)
         new SelectionPrompt<ICommand>()
             .Title("What do you want to do?")
             .PageSize(10)
-            .UseConverter(command => command.Day.HasValue ? $"Day {command.Day}" : "Exit")
+            .UseConverter(command => $"Day {command.Day}")
             .AddChoices(commands));
 
     choice.Execute();
 
-    if (choice is ExitCommand)
-    {
-        running = false;
-    }
-
-
-    else
-    {
-        AnsiConsole.MarkupLine("[grey93]Press any key to return to the menu...[/]");
-        Console.ReadKey();
-        Console.Clear();
-    }
+    AnsiConsole.MarkupLine("[grey93]Press any key to return to the menu...[/]");
+    Console.ReadKey();
+    Console.Clear();
 }

@@ -1,8 +1,10 @@
-namespace Aoc.Commands;
+using Aoc.Common;
 
-public class DayOneCommand : ICommand
+namespace Aoc.Days;
+
+public class Day01 : ICommand
 {
-    public int? Day => 1;
+    public int Day => 1;
 
     public void Execute()
     {
