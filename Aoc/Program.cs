@@ -1,26 +1,37 @@
 ﻿using Aoc.Commands;
-using Aoc.Common;
 using Spectre.Console;
+using System.Reflection;
 
-var choice = AnsiConsole.Prompt(
-    new SelectionPrompt<Choice>()
-        .Title("What do you want to do?")
-        .PageSize(10)
-        .AddChoices(Choice.DayOne, Choice.DayTwo, Choice.Exit));
+var commands = Assembly.GetExecutingAssembly()
+    .GetTypes()
+    .Where(t => typeof(ICommand).IsAssignableFrom(t) && t.IsClass && !t.IsAbstract)
+    .Select(Activator.CreateInstance)
+    .Cast<ICommand>()
+    .OrderByDescending(x => x.Day)
+    .ToList();
 
-switch (choice)
+var running = true;
+while (running)
 {
-    case Choice.DayOne:
-        DayOne.Run();
-        break;
+    var choice = AnsiConsole.Prompt(
+        new SelectionPrompt<ICommand>()
+            .Title("What do you want to do?")
+            .PageSize(10)
+            .UseConverter(command => command.Day.HasValue ? $"Day {command.Day}" : "Exit")
+            .AddChoices(commands));
 
-    case Choice.DayTwo:
-        DayTwo.Run();
-        break;
+    choice.Execute();
 
-    case Choice.Exit:
-        AnsiConsole.MarkupLine("[green]Goodbye![/] Press any key to exit.");
-        AnsiConsole.MarkupLine("[grey93]Press any key to exit.[/]");
+    if (choice is ExitCommand)
+    {
+        running = false;
+    }
+
+
+    else
+    {
+        AnsiConsole.MarkupLine("[grey93]Press any key to return to the menu...[/]");
         Console.ReadKey();
-        break;
+        Console.Clear();
+    }
 }

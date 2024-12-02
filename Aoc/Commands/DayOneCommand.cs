@@ -1,11 +1,13 @@
 namespace Aoc.Commands;
 
-public static class DayOne
+public class DayOneCommand : ICommand
 {
-    public static void Run()
+    public int? Day => 1;
+
+    public void Execute()
     {
         // Part One
-        var filePath = "Data/DayOneInput.txt";
+        var filePath = "Data/day1.txt";
 
         var lines = File.ReadAllLines(filePath);
 

@@ -1,8 +1,10 @@
 namespace Aoc.Commands;
 
-public static class DayTwo
+public class DayTwoCommand : ICommand
 {
-    public static void Run()
+    public int? Day => 2;
+
+    public void Execute()
     {
         var safeReportCount = 0;
         const string filePath = "Data/day2.txt";
