@@ -29,8 +29,10 @@ public class DayOneCommand : ICommand
         rightColumn = rightColumn.OrderBy(x => x).ToList();
 
         var totalDistance = leftColumn.Select((t, i) => Math.Abs(t - rightColumn[i])).Sum();
+        Console.WriteLine($"Total Distance: {totalDistance}");
 
         // Part two
         var similarityScore = leftColumn.Select(t => t * rightColumn.Where(x => x == t).ToList().Count).Sum();
+        Console.WriteLine($"Similarity Score: {similarityScore}");
     }
 }
