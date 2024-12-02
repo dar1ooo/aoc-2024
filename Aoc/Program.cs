@@ -6,12 +6,16 @@ var choice = AnsiConsole.Prompt(
     new SelectionPrompt<Choice>()
         .Title("What do you want to do?")
         .PageSize(10)
-        .AddChoices(Choice.DayOne, Choice.Exit));
+        .AddChoices(Choice.DayOne, Choice.DayTwo, Choice.Exit));
 
 switch (choice)
 {
     case Choice.DayOne:
         DayOne.Run();
+        break;
+
+    case Choice.DayTwo:
+        DayTwo.Run();
         break;
 
     case Choice.Exit:
