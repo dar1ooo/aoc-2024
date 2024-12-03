@@ -9,7 +9,7 @@ public class Day01 : ICommand
     public void Execute()
     {
         // Part One
-        var filePath = "Data/day1.txt";
+        var filePath = "Data/day01.txt";
 
         var lines = File.ReadAllLines(filePath);
 

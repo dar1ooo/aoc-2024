@@ -10,7 +10,7 @@
 |----:|:---------------------------------------------------------:|-----:|-----------------:|:-------------------------------------------------------------------------------------------------:|
 |  01 | [Historian Hysteria](https://adventofcode.com/2024/day/1) |  - s |            - KiB |      [:white_check_mark:](https://github.com/dar1ooo/aoc-2024/tree/master/Aoc/Days/Day01.cs)      |
 |  02 | [Red-Nosed Reports](https://adventofcode.com/2024/day/2)  |  - s |            - MiB | [:white_check_mark:](https://github.com/dar1ooo/aoc-2024/blob/master/src/AoC_2024/AoC_2024_02.jl) |
-|  03 |        [:x:](https://adventofcode.com/2024/day/3)         |  - s |            - KiB |                            [:x:](https://github.com/dar1ooo/aoc-2024)                             |
+|  03 |    [Mull It Over](https://adventofcode.com/2024/day/3)    |  - s |            - KiB |                            [:x:](https://github.com/dar1ooo/aoc-2024)                             |
 |  04 |        [:x:](https://adventofcode.com/2024/day/4)         |  - s |            - KiB |                            [:x:](https://github.com/dar1ooo/aoc-2024)                             |
 |  05 |        [:x:](https://adventofcode.com/2024/day/5)         |  - s |            - KiB |                            [:x:](https://github.com/dar1ooo/aoc-2024)                             |
 |  06 |        [:x:](https://adventofcode.com/2024/day/6)         |  - s |            - KiB |                            [:x:](https://github.com/dar1ooo/aoc-2024)                             |

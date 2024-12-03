@@ -9,7 +9,7 @@ public class Day02 : ICommand
     public void Execute()
     {
         var safeReportCount = 0;
-        const string filePath = "Data/day2.txt";
+        const string filePath = "Data/day02.txt";
 
         var lines = File.ReadAllLines(filePath);
         var parsedData = lines
