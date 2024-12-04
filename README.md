@@ -11,7 +11,7 @@
 |  01 | [Historian Hysteria](https://adventofcode.com/2024/day/1) |  - s |            - KiB | [:white_check_mark:](https://github.com/dar1ooo/aoc-2024/tree/master/Aoc/Days/Day01.cs) |
 |  02 | [Red-Nosed Reports](https://adventofcode.com/2024/day/2)  |  - s |            - MiB | [:white_check_mark:](https://github.com/dar1ooo/aoc-2024/tree/master/Aoc/Days/Day02.cs) |
 |  03 |    [Mull It Over](https://adventofcode.com/2024/day/3)    |  - s |            - KiB | [:white_check_mark:](https://github.com/dar1ooo/aoc-2024/tree/master/Aoc/Days/Day03.cs) |
-|  04 |    [Ceres Search](https://adventofcode.com/2024/day/4)    |  - s |            - KiB |        [:x:](https://github.com/dar1ooo/aoc-2024/tree/master/Aoc/Days/Day04.cs)         |
+|  04 |    [Ceres Search](https://adventofcode.com/2024/day/4)    |  - s |            - KiB | [:white_check_mark:](https://github.com/dar1ooo/aoc-2024/tree/master/Aoc/Days/Day04.cs) |
 |  05 |        [:x:](https://adventofcode.com/2024/day/5)         |  - s |            - KiB |                       [:x:](https://github.com/dar1ooo/aoc-2024)                        |
 |  06 |        [:x:](https://adventofcode.com/2024/day/6)         |  - s |            - KiB |                       [:x:](https://github.com/dar1ooo/aoc-2024)                        |
 |  07 |        [:x:](https://adventofcode.com/2024/day/7)         |  - s |            - KiB |                       [:x:](https://github.com/dar1ooo/aoc-2024)                        |
