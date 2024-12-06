@@ -13,7 +13,7 @@
 |  03 |    [Mull It Over](https://adventofcode.com/2024/day/3)    |  - s |            - KiB | [:white_check_mark:](https://github.com/dar1ooo/aoc-2024/tree/master/Aoc/Days/Day03.cs) |
 |  04 |    [Ceres Search](https://adventofcode.com/2024/day/4)    |  - s |            - KiB | [:white_check_mark:](https://github.com/dar1ooo/aoc-2024/tree/master/Aoc/Days/Day04.cs) |
 |  05 |   [:Print Queue:](https://adventofcode.com/2024/day/5)    |  - s |            - KiB | [:white_check_mark:](https://github.com/dar1ooo/aoc-2024/tree/master/Aoc/Days/Day05.cs) |
-|  06 |        [:x:](https://adventofcode.com/2024/day/6)         |  - s |            - KiB |                       [:x:](https://github.com/dar1ooo/aoc-2024)                        |
+|  06 | [:Guard Gallivant:](https://adventofcode.com/2024/day/6)  |  - s |            - KiB | [:white_check_mark:](https://github.com/dar1ooo/aoc-2024/tree/master/Aoc/Days/Day06.cs) |
 |  07 |        [:x:](https://adventofcode.com/2024/day/7)         |  - s |            - KiB |                       [:x:](https://github.com/dar1ooo/aoc-2024)                        |
 |  08 |        [:x:](https://adventofcode.com/2024/day/8)         |  - s |            - KiB |                       [:x:](https://github.com/dar1ooo/aoc-2024)                        |
 |  09 |        [:x:](https://adventofcode.com/2024/day/9)         |  - s |            - KiB |                       [:x:](https://github.com/dar1ooo/aoc-2024)                        |
